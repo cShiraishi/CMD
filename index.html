@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelidonium majus L. Database</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="background-glob"></div>
+    <div class="container">
+        <header>
+            <img src="assets/images/logo.png" alt="Chelidonium majus L. Database Logo" class="site-logo">
+            <h1>Chelidonium majus L. Database</h1>
+            <p class="subtitle">Interactive database of bioactive compounds</p>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by name, class, or molecular formula...">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="search-icon">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+
+            <!-- Filters Section -->
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label>Class</label>
+                    <select id="classFilter">
+                        <option value="">All Classes</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>MW</label>
+                    <div class="range-inputs">
+                        <input type="number" id="mwMin" placeholder="Min" step="10">
+                        <input type="number" id="mwMax" placeholder="Max" step="10">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>LogP</label>
+                    <div class="range-inputs">
+                        <input type="number" id="logpMin" placeholder="Min" step="0.1">
+                        <input type="number" id="logpMax" placeholder="Max" step="0.1">
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <label>TPSA</label>
+                    <div class="range-inputs">
+                        <input type="number" id="tpsaMin" placeholder="Min" step="10">
+                        <input type="number" id="tpsaMax" placeholder="Max" step="10">
+                    </div>
+                </div>
+                <button id="resetFilters" class="reset-btn">Reset Filters</button>
+                <button id="analyticsBtn" class="analytics-btn">Analytics 📊</button>
+            </div>
+        </header>
+
+        <main id="cardGrid">
+            <!-- Cards will be injected here by JS -->
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Molecule Explorer. Generated from scientific data.</p>
+        </footer>
+    </div>
+
+    <!-- Modal for details (optional enhancement) -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Analytics Dashboard Modal -->
+    <div id="analyticsModal" class="modal">
+        <div class="modal-content analytics-content">
+            <span class="close-button" id="closeAnalytics">&times;</span>
+            <h2>Library Analytics</h2>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Class Distribution</h3>
+                    <canvas id="classChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Molecular Weight Distribution</h3>
+                    <canvas id="mwChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>LogP Distribution</h3>
+                    <canvas id="logpChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>TPSA Distribution</h3>
+                    <canvas id="tpsaChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

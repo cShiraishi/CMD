@@ -1,0 +1,300 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const cardGrid = document.getElementById('cardGrid');
+    const searchInput = document.getElementById('searchInput');
+
+    // Filter Inputs
+    const mwMin = document.getElementById('mwMin');
+    const mwMax = document.getElementById('mwMax');
+    const logpMin = document.getElementById('logpMin');
+    const logpMax = document.getElementById('logpMax');
+    const tpsaMin = document.getElementById('tpsaMin');
+    const tpsaMax = document.getElementById('tpsaMax');
+    const resetBtn = document.getElementById('resetFilters');
+
+    // compoundsData is now a global variable loaded from data.js
+    let allCompounds = (typeof compoundsData !== 'undefined') ? compoundsData : [];
+
+    if (allCompounds.length === 0) {
+        console.error('No data found in compoundsData');
+        cardGrid.innerHTML = '<p style="text-align:center; grid-column: 1/-1; color: #94a3b8;">Error: No data loaded. Please check data.js.</p>';
+    } else {
+        renderCards(allCompounds);
+    }
+
+    // Unified Filter Function
+    function filterData() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const selectedClass = classFilter.value;
+
+        // Parse numerical inputs
+        const mw_min = parseFloat(mwMin.value) || 0;
+        const mw_max = parseFloat(mwMax.value) || Infinity;
+        const logp_min = parseFloat(logpMin.value) || -Infinity;
+        const logp_max = parseFloat(logpMax.value) || Infinity;
+        const tpsa_min = parseFloat(tpsaMin.value) || 0;
+        const tpsa_max = parseFloat(tpsaMax.value) || Infinity;
+
+        const filteredCompounds = allCompounds.filter(compound => {
+            // Text Search
+            const textMatch = (
+                compound.name.toLowerCase().includes(searchTerm) ||
+                compound.class.toLowerCase().includes(searchTerm) ||
+                compound.molecular_formula.toLowerCase().includes(searchTerm)
+            );
+
+            // Class Filter
+            const classMatch = !selectedClass || compound.class === selectedClass;
+
+            // Numerical Filters
+            const mwMatch = compound.mw >= mw_min && compound.mw <= mw_max;
+            const logpMatch = compound.logp >= logp_min && compound.logp <= logp_max;
+            const tpsaMatch = compound.tpsa >= tpsa_min && compound.tpsa <= tpsa_max;
+
+            return textMatch && classMatch && mwMatch && logpMatch && tpsaMatch;
+        });
+
+        renderCards(filteredCompounds);
+    }
+
+    // Event Listeners for all inputs
+    const inputs = [searchInput, classFilter, mwMin, mwMax, logpMin, logpMax, tpsaMin, tpsaMax];
+    inputs.forEach(input => {
+        input.addEventListener('input', filterData);
+    });
+
+    // Reset Button
+    resetBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        classFilter.value = '';
+        mwMin.value = '';
+        mwMax.value = '';
+        logpMin.value = '';
+        logpMax.value = '';
+        tpsaMin.value = '';
+        tpsaMax.value = '';
+        renderCards(allCompounds);
+    });
+
+    function renderCards(compounds) {
+        cardGrid.innerHTML = ''; // Clear existing cards
+
+        if (compounds.length === 0) {
+            cardGrid.innerHTML = '<p style="text-align:center; grid-column: 1/-1; color: #94a3b8;">No compounds found matching your search.</p>';
+            return;
+        }
+
+        compounds.forEach(compound => {
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            // Fallback for long names
+            const displayName = compound.name.length > 25 ? compound.name.substring(0, 22) + '...' : compound.name;
+
+            card.innerHTML = `
+                <div class="card-image">
+                    <img src="assets/images/${compound.image}" alt="${compound.name}" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxsaW5lIHgxPSIxMiIgeTE9IjgiIHgyPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjEyIiB5MT0iMTYiIHgyPSIxMi4wMSIgeTI9IjE2Ii8+PC9zdmc+'">
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title" title="${compound.name}">${displayName}</h2>
+                    
+                    <div class="card-property">
+                        <span class="label">ID</span>
+                        <span>${compound.id}</span>
+                    </div>
+                    
+                    <div class="card-property">
+                        <span class="label">Formula</span>
+                        <span>${compound.molecular_formula}</span>
+                    </div>
+
+                    <div class="card-property">
+                        <span class="label">SMILES</span>
+                        <span class="smiles-text" title="${compound.smiles}">${compound.smiles}</span>
+                    </div>
+
+                    <div class="card-stats" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; margin: 1rem 0; text-align: center; border-top: 1px solid rgba(148, 163, 184, 0.1); padding-top: 0.5rem;">
+                        <div class="stat-item">
+                            <span class="label" style="display:block; font-size: 0.7rem;">MW</span>
+                            <span class="value" style="font-weight: 600; color: #38bdf8;">${compound.mw}</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label" style="display:block; font-size: 0.7rem;">LogP</span>
+                            <span class="value" style="font-weight: 600; color: #818cf8;">${compound.logp}</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="label" style="display:block; font-size: 0.7rem;">TPSA</span>
+                            <span class="value" style="font-weight: 600; color: #38bdf8;">${compound.tpsa}</span>
+                        </div>
+                    </div>
+
+                    <div class="card-actions" style="margin-top: 1rem; border-top: 1px solid rgba(148, 163, 184, 0.1); padding-top: 1rem;">
+                        <a href="assets/sdf/${compound.sdf}" download="${compound.sdf}" class="download-btn" onclick="event.stopPropagation();">
+                            Download SDF
+                        </a>
+                    </div>
+                </div>
+            `;
+
+            // Add click interaction
+            card.addEventListener('click', () => {
+                console.log(`Clicked on ${compound.name}`);
+            });
+
+            cardGrid.appendChild(card);
+        });
+    }
+
+    // Analytics Dashboard
+    const analyticsBtn = document.getElementById('analyticsBtn');
+    const analyticsModal = document.getElementById('analyticsModal');
+    const closeAnalytics = document.getElementById('closeAnalytics');
+    let charts = {};
+
+    analyticsBtn.addEventListener('click', () => {
+        analyticsModal.style.display = 'block';
+        generateCharts();
+    });
+
+    closeAnalytics.addEventListener('click', () => {
+        analyticsModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === analyticsModal) {
+            analyticsModal.style.display = 'none';
+        }
+    });
+
+    function generateCharts() {
+        if (!allCompounds.length) return;
+
+        // Helper to destroy old charts
+        const destroyChart = (id) => {
+            if (charts[id]) {
+                charts[id].destroy();
+            }
+        };
+
+        // 1. Class Distribution
+        const classCounts = {};
+        allCompounds.forEach(c => {
+            classCounts[c.class] = (classCounts[c.class] || 0) + 1;
+        });
+
+        destroyChart('classChart');
+        charts['classChart'] = new Chart(document.getElementById('classChart'), {
+            type: 'doughnut',
+            data: {
+                labels: Object.keys(classCounts),
+                datasets: [{
+                    data: Object.values(classCounts),
+                    backgroundColor: [
+                        '#38bdf8', '#818cf8', '#34d399', '#f472b6', '#fbbf24', '#a78bfa', '#fb7185', '#2dd4bf'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'right', labels: { color: '#64748b' } }
+                }
+            }
+        });
+
+        // Helper for Histogram Data
+        const getHistogramData = (property, binSize) => {
+            const values = allCompounds.map(c => c[property]);
+            const min = Math.floor(Math.min(...values) / binSize) * binSize;
+            const max = Math.ceil(Math.max(...values) / binSize) * binSize;
+            const bins = {};
+
+            // Initialize bins
+            for (let i = min; i < max; i += binSize) {
+                bins[i] = 0;
+            }
+
+            values.forEach(v => {
+                const bin = Math.floor(v / binSize) * binSize;
+                if (bins[bin] !== undefined) bins[bin]++;
+            });
+
+            return {
+                labels: Object.keys(bins).map(k => `${k}-${parseInt(k) + binSize}`),
+                data: Object.values(bins)
+            };
+        };
+
+        // 2. MW Distribution
+        const mwData = getHistogramData('mw', 50);
+        destroyChart('mwChart');
+        charts['mwChart'] = new Chart(document.getElementById('mwChart'), {
+            type: 'bar',
+            data: {
+                labels: mwData.labels,
+                datasets: [{
+                    label: 'Count',
+                    data: mwData.data,
+                    backgroundColor: '#38bdf8',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148, 163, 184, 0.2)' } },
+                    y: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148, 163, 184, 0.2)' } }
+                },
+                plugins: { legend: { display: false } }
+            }
+        });
+
+        // 3. LogP Distribution
+        const logpData = getHistogramData('logp', 1);
+        destroyChart('logpChart');
+        charts['logpChart'] = new Chart(document.getElementById('logpChart'), {
+            type: 'bar',
+            data: {
+                labels: logpData.labels,
+                datasets: [{
+                    label: 'Count',
+                    data: logpData.data,
+                    backgroundColor: '#818cf8',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148, 163, 184, 0.2)' } },
+                    y: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148, 163, 184, 0.2)' } }
+                },
+                plugins: { legend: { display: false } }
+            }
+        });
+
+        // 4. TPSA Distribution
+        const tpsaData = getHistogramData('tpsa', 20);
+        destroyChart('tpsaChart');
+        charts['tpsaChart'] = new Chart(document.getElementById('tpsaChart'), {
+            type: 'bar',
+            data: {
+                labels: tpsaData.labels,
+                datasets: [{
+                    label: 'Count',
+                    data: tpsaData.data,
+                    backgroundColor: '#34d399',
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148, 163, 184, 0.2)' } },
+                    y: { ticks: { color: '#64748b' }, grid: { color: 'rgba(148, 163, 184, 0.2)' } }
+                },
+                plugins: { legend: { display: false } }
+            }
+        });
+    }
+});

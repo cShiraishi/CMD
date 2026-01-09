@@ -1,0 +1,674 @@
+[
+    {
+        "id": "1",
+        "name": "Protocatechuic acid",
+        "class": "Hydroxybenzoic acids",
+        "molecular_formula": "C7H6O4",
+        "smiles": "C1=CC(=C(C=C1C(=O)O)O)O",
+        "image": "mol_1.svg"
+    },
+    {
+        "id": "2",
+        "name": "Veratric Acid",
+        "class": "Hydroxybenzoic acids",
+        "molecular_formula": "C9H10O4",
+        "smiles": "COC1=C(C=C(C=C1)C(=O)O)OC",
+        "image": "mol_2.svg"
+    },
+    {
+        "id": "3",
+        "name": "Salicylic acid",
+        "class": "Hydroxybenzoic acids",
+        "molecular_formula": "C7H6O3",
+        "smiles": "C1=CC=C(C(=C1)C(=O)O)O",
+        "image": "mol_3.svg"
+    },
+    {
+        "id": "4",
+        "name": "4-H-phenylacetic acid",
+        "class": "Hydroxybenzoic acids",
+        "molecular_formula": "C8H8O3",
+        "smiles": "COC(=O)C1=CC=C(C=C1)O",
+        "image": "mol_4.svg"
+    },
+    {
+        "id": "5",
+        "name": "Vanillic acid",
+        "class": "Hydroxybenzoic acids",
+        "molecular_formula": "C8H8O4",
+        "smiles": "COC1=C(C=CC(=C1)C(=O)O)O",
+        "image": "mol_5.svg"
+    },
+    {
+        "id": "6",
+        "name": "Ellagic Acid",
+        "class": "Hydroxybenzoic acids",
+        "molecular_formula": "C14H6O8",
+        "smiles": "C1=C2C3=C(C(=C1O)O)OC(=O)C4=CC(=C(C(=C43)OC2=O)O)O",
+        "image": "mol_6.svg"
+    },
+    {
+        "id": "7",
+        "name": "Dihydrocaffeic acid",
+        "class": "Hydroxycinnamic acids",
+        "molecular_formula": "C9H10O4",
+        "smiles": "C1=CC(=C(C=C1CCC(=O)O)O)O",
+        "image": "mol_7.svg"
+    },
+    {
+        "id": "8",
+        "name": "Neochlorogenic acid",
+        "class": "Hydroxycinnamic acids",
+        "molecular_formula": "C16H18O9",
+        "smiles": "C1[C@H]([C@@H]([C@@H](C[C@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O",
+        "image": "mol_8.svg"
+    },
+    {
+        "id": "9",
+        "name": "Caffeic acid",
+        "class": "Hydroxycinnamic acids",
+        "molecular_formula": "C9H8O4",
+        "smiles": "C1=CC(=C(C=C1/C=C/C(=O)O)O)O",
+        "image": "mol_9.svg"
+    },
+    {
+        "id": "10",
+        "name": "Homovanillic acid",
+        "class": "Hydroxycinnamic acids",
+        "molecular_formula": "C9H10O4",
+        "smiles": "COC1=C(C=CC(=C1)CC(=O)O)O",
+        "image": "mol_10.svg"
+    },
+    {
+        "id": "11",
+        "name": "p-Coumaric acid",
+        "class": "Hydroxycinnamic acids",
+        "molecular_formula": "C9H8O3",
+        "smiles": "C1=CC(=CC=C1/C=C/C(=O)O)O",
+        "image": "mol_11.svg"
+    },
+    {
+        "id": "12",
+        "name": "Ferulic acid",
+        "class": "Hydroxycinnamic acids",
+        "molecular_formula": "C10H10O4",
+        "smiles": "COC1=C(C=CC(=C1)/C=C/C(=O)O)O",
+        "image": "mol_12.svg"
+    },
+    {
+        "id": "13",
+        "name": "4,5-Dicaffeoylquinic acid",
+        "class": "Hydroxycinnamic acids",
+        "molecular_formula": "C25H24O12",
+        "smiles": "C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)OC(=O)/C=C/C3=CC(=C(C=C3)O)O)O",
+        "image": "mol_13.svg"
+    },
+    {
+        "id": "14",
+        "name": "Feruloylagmatine",
+        "class": "Hydroxycinnamic acid amides",
+        "molecular_formula": "C15H22N4O3",
+        "smiles": "COC1=C(C=CC(=C1)/C=C/C(=O)NCCCCN=C(N)N)O",
+        "image": "mol_14.svg"
+    },
+    {
+        "id": "15",
+        "name": "p-Coumaroylputrescine",
+        "class": "Hydroxycinnamic acid amides",
+        "molecular_formula": "C13H18N2O2",
+        "smiles": "C1=CC(=CC=C1/C=C/C(=O)NCCCCN)O",
+        "image": "mol_15.svg"
+    },
+    {
+        "id": "16",
+        "name": "N-Caffeoyltyramine",
+        "class": "Hydroxycinnamic acid amides",
+        "molecular_formula": "C17H17NO4",
+        "smiles": "C1=CC(=CC=C1CCNC(=O)/C=C/C2=CC(=C(C=C2)O)O)O",
+        "image": "mol_16.svg"
+    },
+    {
+        "id": "17",
+        "name": "p-Coumaroyltyramine",
+        "class": "Hydroxycinnamic acid amides",
+        "molecular_formula": "C17H17NO3",
+        "smiles": "C1=CC(=CC=C1CCNC(=O)/C=C/C2=CC=C(C=C2)O)O",
+        "image": "mol_17.svg"
+    },
+    {
+        "id": "18",
+        "name": "Feruloyltyramine",
+        "class": "Hydroxycinnamic acid amides",
+        "molecular_formula": "C18H19O4N",
+        "smiles": "COC1=C(C=CC(=C1)/C=C/C(=O)NCCC2=CC=C(C=C2)O)O",
+        "image": "mol_18.svg"
+    },
+    {
+        "id": "19",
+        "name": "p-Coumaroyltryptamine",
+        "class": "Hydroxycinnamic acid amides",
+        "molecular_formula": "C19H18N2O2",
+        "smiles": "C1=CC=C2C(=C1)C(=CN2)CCNC(=O)/C=C/C3=CC=C(C=C3)O",
+        "image": "mol_19.svg"
+    },
+    {
+        "id": "20",
+        "name": "Catechin",
+        "class": "Flavanol",
+        "molecular_formula": "C15H14O6",
+        "smiles": "C1[C@@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+        "image": "mol_20.svg"
+    },
+    {
+        "id": "21",
+        "name": "Epicatechin",
+        "class": "Flavanol",
+        "molecular_formula": "C15H14O6",
+        "smiles": "C1[C@H]([C@H](OC2=CC(=CC(=C21)O)O)C3=CC(=C(C=C3)O)O)O",
+        "image": "mol_21.svg"
+    },
+    {
+        "id": "22",
+        "name": "Hesperidin",
+        "class": "Flavanone",
+        "molecular_formula": "C28H34O15",
+        "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=CC(=C4C(=O)C[C@H](OC4=C3)C5=CC(=C(C=C5)OC)O)O)O)O)O)O)O)O",
+        "image": "mol_22.svg"
+    },
+    {
+        "id": "23",
+        "name": "Naringenin",
+        "class": "Flavanone",
+        "molecular_formula": "C15H12O5",
+        "smiles": "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC=C(C=C3)O",
+        "image": "mol_23.svg"
+    },
+    {
+        "id": "24",
+        "name": "Hesperetin",
+        "class": "Flavanone",
+        "molecular_formula": "C16H14O6",
+        "smiles": "COC1=C(C=C(C=C1)[C@@H]2CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "image": "mol_24.svg"
+    },
+    {
+        "id": "25",
+        "name": "Pinocembrin",
+        "class": "Flavanone",
+        "molecular_formula": "C15H12O4",
+        "smiles": "C1[C@H](OC2=CC(=CC(=C2C1=O)O)O)C3=CC=CC=C3",
+        "image": "mol_25.svg"
+    },
+    {
+        "id": "26",
+        "name": "Vitexin",
+        "class": "Flavone",
+        "molecular_formula": "C21H20O10",
+        "smiles": "C1=CC(=CC=C1C2=CC(=O)C3=C(O2)C(=C(C=C3O)O)[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O",
+        "image": "mol_26.svg"
+    },
+    {
+        "id": "27",
+        "name": "Cynaroside",
+        "class": "Flavone",
+        "molecular_formula": "C21H20O11",
+        "smiles": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O)O)O",
+        "image": "mol_27.svg"
+    },
+    {
+        "id": "28",
+        "name": "Diosmin",
+        "class": "Flavone",
+        "molecular_formula": "C28H32O15",
+        "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=CC(=C4C(=C3)OC(=CC4=O)C5=CC(=C(C=C5)OC)O)O)O)O)O)O)O)O",
+        "image": "mol_28.svg"
+    },
+    {
+        "id": "29",
+        "name": "Apigetrin",
+        "class": "Flavone",
+        "molecular_formula": "C21H20O10",
+        "smiles": "C1=CC(=CC=C1C2=CC(=O)C3=C(C=C(C=C3O2)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O)O",
+        "image": "mol_29.svg"
+    },
+    {
+        "id": "30",
+        "name": "Diosmetin-7-glucoside",
+        "class": "Flavone",
+        "molecular_formula": "C22H22O11",
+        "smiles": "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(C=C(C=C3O2)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O)O",
+        "image": "mol_30.svg"
+    },
+    {
+        "id": "31",
+        "name": "Luteolin/Scutellarein",
+        "class": "Flavone",
+        "molecular_formula": "C15H10O6",
+        "smiles": "C1=CC(=C(C=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+        "image": "mol_31.svg"
+    },
+    {
+        "id": "32",
+        "name": "Apigenin",
+        "class": "Flavone",
+        "molecular_formula": "C15H10O5",
+        "smiles": "C1=CC(=CC=C1C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "image": "mol_32.svg"
+    },
+    {
+        "id": "33",
+        "name": "Diosmetin",
+        "class": "Flavone",
+        "molecular_formula": "C16H12O6",
+        "smiles": "COC1=C(C=C(C=C1)C2=CC(=O)C3=C(C=C(C=C3O2)O)O)O",
+        "image": "mol_33.svg"
+    },
+    {
+        "id": "34",
+        "name": "Isorhamnetin-rutinoside- glucoside",
+        "class": "Flavonol",
+        "molecular_formula": "C34H42O21",
+        "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)C6=CC(=C(C=C6)O)OC)O)O)O)O)O)O",
+        "image": "mol_34.svg"
+    },
+    {
+        "id": "35",
+        "name": "Quercetin-3-rhamnosylrutinoside",
+        "class": "Flavonol",
+        "molecular_formula": "C33H40O20",
+        "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC2=CC(=C3C(=C2)OC(=C(C3=O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)CO)O)O)O)O)O)O)C6=CC=C(C=C6)O)O)O)O)O",
+        "image": "mol_35.svg"
+    },
+    {
+        "id": "36",
+        "name": "Isorhamnetin rutinoside-rhamnoside",
+        "class": "Flavonol",
+        "molecular_formula": "C34H42O20",
+        "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC=C(C=C5)OC)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)CO)O)O)O)O)O)O)O)O",
+        "image": "mol_36.svg"
+    },
+    {
+        "id": "37",
+        "name": "Rutin",
+        "class": "Flavonol",
+        "molecular_formula": "C27H30O16",
+        "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC(=C(C=C5)O)O)O)O)O)O)O)O",
+        "image": "mol_37.svg"
+    },
+    {
+        "id": "38",
+        "name": "Quercetin-glucoside",
+        "class": "Flavonol",
+        "molecular_formula": "C21H20O12",
+        "smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O)O",
+        "image": "mol_38.svg"
+    },
+    {
+        "id": "39",
+        "name": "Kaempferol 3-rutinoside",
+        "class": "Flavonol",
+        "molecular_formula": "C27H30O15",
+        "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC[C@@H]2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC=C(C=C5)O)O)O)O)O)O)O",
+        "image": "mol_39.svg"
+    },
+    {
+        "id": "40",
+        "name": "Isorhamnetin rutinoside",
+        "class": "Flavonol",
+        "molecular_formula": "C28H32O16",
+        "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OCC2[C@H]([C@@H]([C@H]([C@@H](O2)OC3=C(OC4=CC(=CC(=C4C3=O)O)O)C5=CC(=C(C=C5)O)OC)O)O)O)O)O)O",
+        "image": "mol_40.svg"
+    },
+    {
+        "id": "41",
+        "name": "Guaiaverin/Reynoutrin",
+        "class": "Flavonol",
+        "molecular_formula": "C20H18O11",
+        "smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O[C@H]4[C@@H]([C@H]([C@@H](O4)CO)O)O)O)O",
+        "image": "mol_41.svg"
+    },
+    {
+        "id": "42",
+        "name": "Quercitrin/Quercetin 3-rhamnoside",
+        "class": "Flavonol",
+        "molecular_formula": "C21H20O11",
+        "smiles": "C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)OC2=C(OC3=CC(=CC(=C3C2=O)O)O)C4=CC(=C(C=C4)O)O)O)O)O",
+        "image": "mol_42.svg"
+    },
+    {
+        "id": "43",
+        "name": "Isorhamnetin-3-glucoside",
+        "class": "Flavonol",
+        "molecular_formula": "C22H22O12",
+        "smiles": "COC1=C(C=CC(=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)O",
+        "image": "mol_43.svg"
+    },
+    {
+        "id": "44",
+        "name": "Quercetin",
+        "class": "Flavonol",
+        "molecular_formula": "C15H10O7",
+        "smiles": "C1=CC(=C(C=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O)O",
+        "image": "mol_44.svg"
+    },
+    {
+        "id": "45",
+        "name": "Kaempferol",
+        "class": "Flavonol",
+        "molecular_formula": "C15H10O6",
+        "smiles": "C1=CC(=CC=C1C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+        "image": "mol_45.svg"
+    },
+    {
+        "id": "46",
+        "name": "Isorhamnetin",
+        "class": "Flavonol",
+        "molecular_formula": "C16H12O7",
+        "smiles": "COC1=C(C=CC(=C1)C2=C(C(=O)C3=C(C=C(C=C3O2)O)O)O)O",
+        "image": "mol_46.svg"
+    },
+    {
+        "id": "47",
+        "name": "Esculetin/Aesculetin",
+        "class": "Coumarins",
+        "molecular_formula": "C9H6O4",
+        "smiles": "C1=CC(=O)OC2=CC(=C(C=C21)O)O",
+        "image": "mol_47.svg"
+    },
+    {
+        "id": "48",
+        "name": "Umbelliferone",
+        "class": "Coumarins",
+        "molecular_formula": "C9H6O3",
+        "smiles": "C1=CC(=CC2=C1C=CC(=O)O2)O",
+        "image": "mol_48.svg"
+    },
+    {
+        "id": "49",
+        "name": "Scoparone",
+        "class": "Coumarins",
+        "molecular_formula": "C11H10O4",
+        "smiles": "COC1=C(C=C2C(=C1)C=CC(=O)O2)OC",
+        "image": "mol_49.svg"
+    },
+    {
+        "id": "50",
+        "name": "Scopoletin",
+        "class": "Coumarins",
+        "molecular_formula": "C10H8O4",
+        "smiles": "COC1=C(C=C2C(=C1)C=CC(=O)O2)O",
+        "image": "mol_50.svg"
+    },
+    {
+        "id": "51",
+        "name": "Resveratrol",
+        "class": "Stilbenes",
+        "molecular_formula": "C14H12O3",
+        "smiles": "C1=CC(=CC=C1/C=C/C2=CC(=CC(=C2)O)O)O",
+        "image": "mol_51.svg"
+    },
+    {
+        "id": "52",
+        "name": "Piceatannol",
+        "class": "Stilbenes",
+        "molecular_formula": "C14H12O4",
+        "smiles": "C1=CC(=C(C=C1/C=C/C2=CC(=CC(=C2)O)O)O)O",
+        "image": "mol_52.svg"
+    },
+    {
+        "id": "53",
+        "name": "Syringaldehyde",
+        "class": "Phenolic Aldehyde",
+        "molecular_formula": "C9H10O4",
+        "smiles": "COC1=CC(=CC(=C1O)OC)C=O",
+        "image": "mol_53.svg"
+    },
+    {
+        "id": "54",
+        "name": "Vanillin",
+        "class": "Phenolic Aldehyde",
+        "molecular_formula": "C8H8O3",
+        "smiles": "COC1=C(C=CC(=C1)C=O)O",
+        "image": "mol_54.svg"
+    },
+    {
+        "id": "55",
+        "name": "Protocatechualdehyde",
+        "class": "Phenolic Aldehyde",
+        "molecular_formula": "C7H6O3",
+        "smiles": "C1=CC(=C(C=C1C=O)O)O",
+        "image": "mol_55.svg"
+    },
+    {
+        "id": "56",
+        "name": "Hydrotyrosol",
+        "class": "Phenylethanoids",
+        "molecular_formula": "C8H8O3",
+        "smiles": "COC(=O)C1=CC=C(C=C1)O",
+        "image": "mol_56.svg"
+    },
+    {
+        "id": "57",
+        "name": "Phenylacetic acid",
+        "class": "Phenylpropanoids",
+        "molecular_formula": "C8H8O2",
+        "smiles": "C1=CC=C(C=C1)CC(=O)O",
+        "image": "mol_57.svg"
+    },
+    {
+        "id": "58",
+        "name": "Sanguinarine",
+        "class": "Benzophenanthrine quaternary amine",
+        "molecular_formula": "C20H13NO4",
+        "smiles": "C[N+]1=C2C(=C3C=CC4=C(C3=C1)OCO4)C=CC5=CC6=C(C=C52)OCO6",
+        "image": "mol_58.svg"
+    },
+    {
+        "id": "59",
+        "name": "Chelerythrine",
+        "class": "Benzophenanthrine quaternary amine",
+        "molecular_formula": "C21H17NO4",
+        "smiles": "C[N+]1=C2C(=C3C=CC(=C(C3=C1)OC)OC)C=CC4=CC5=C(C=C42)OCO5",
+        "image": "mol_59.svg"
+    },
+    {
+        "id": "60",
+        "name": "Dihydrochelerythrine",
+        "class": "Dihydrobenzophen-anthridine",
+        "molecular_formula": "C21H19NO4",
+        "smiles": "CN1CC2=C(C=CC(=C2OC)OC)C3=C1C4=CC5=C(C=C4C=C3)OCO5",
+        "image": "mol_60.svg"
+    },
+    {
+        "id": "61",
+        "name": "Dihydrosanguinarine",
+        "class": "Dihydrobenzophen-anthridine",
+        "molecular_formula": "C20H15NO4",
+        "smiles": "CN1CC2=C(C=CC3=C2OCO3)C4=C1C5=CC6=C(C=C5C=C4)OCO6",
+        "image": "mol_61.svg"
+    },
+    {
+        "id": "62",
+        "name": "Oxychelerythrine",
+        "class": "Dihydrobenzophen-anthridine",
+        "molecular_formula": "C21H17NO5",
+        "smiles": "CN1C2=C(C=CC3=CC4=C(C=C32)OCO4)C5=C(C1=O)C(=C(C=C5)OC)OC",
+        "image": "mol_62.svg"
+    },
+    {
+        "id": "63",
+        "name": "Norchelidonine",
+        "class": "Hexahydrobenzophenthridine",
+        "molecular_formula": "C19H17NO5",
+        "smiles": "C1[C@H]([C@@H]2[C@H](C3=CC4=C(C=C31)OCO4)NCC5=C2C=CC6=C5OCO6)O",
+        "image": "mol_63.svg"
+    },
+    {
+        "id": "64",
+        "name": "Oxysanguinarine",
+        "class": "Dihydrobenzophen-anthridine",
+        "molecular_formula": "C20H13NO5",
+        "smiles": "CN1C2=C(C=CC3=CC4=C(C=C32)OCO4)C5=C(C1=O)C6=C(C=C5)OCO6",
+        "image": "mol_64.svg"
+    },
+    {
+        "id": "65",
+        "name": "Chelidonine",
+        "class": "Hexahydrobenzophenthridine",
+        "molecular_formula": "C20H19NO5",
+        "smiles": "CN1CC2=C(C=CC3=C2OCO3)[C@@H]4[C@H]1C5=CC6=C(C=C5C[C@@H]4O)OCO6",
+        "image": "mol_65.svg"
+    },
+    {
+        "id": "66",
+        "name": "Norchelidonine",
+        "class": "Hexahydrobenzophenthridine",
+        "molecular_formula": "C19H17NO5",
+        "smiles": "C1[C@H]([C@@H]2[C@H](C3=CC4=C(C=C31)OCO4)NCC5=C2C=CC6=C5OCO6)O",
+        "image": "mol_66.svg"
+    },
+    {
+        "id": "67",
+        "name": "Chelamine",
+        "class": "Hexahydrobenzophenthridine",
+        "molecular_formula": "C20H19NO6",
+        "smiles": "CN1CC2=C(C=CC3=C2OCO3)[C@@H]4[C@H]1C5=CC6=C(C=C5[C@H]([C@@H]4O)O)OCO6",
+        "image": "mol_67.svg"
+    },
+    {
+        "id": "68",
+        "name": "Chelamidine",
+        "class": "Hexahydrobenzophenthridine",
+        "molecular_formula": "C21H23NO6",
+        "smiles": "CC(=O)N[C@H]1CCC2=CC(=C(C(=C2C3=CC=C(C(=O)C=C13)O)OC)OC)OC",
+        "image": "mol_68.svg"
+    },
+    {
+        "id": "69",
+        "name": "(+)-Homochelidonine",
+        "class": "Hexahydrobenzophenthridine",
+        "molecular_formula": "C21H23NO5",
+        "smiles": "CC(=O)O[C@H]1C=C[C@H]2[C@H]3CC4=C5[C@]2([C@H]1OC5=C(C=C4)OC(=O)C)CCN3C",
+        "image": "mol_69.svg"
+    },
+    {
+        "id": "70",
+        "name": "Berberine",
+        "class": "Protoberberine",
+        "molecular_formula": "C20H17NO4",
+        "smiles": "COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)OC",
+        "image": "mol_70.svg"
+    },
+    {
+        "id": "71",
+        "name": "Berberrubine",
+        "class": "Protoberberine",
+        "molecular_formula": "C19H15NO4",
+        "smiles": "COC1=C(C2=C[N+]3=C(C=C2C=C1)C4=CC5=C(C=C4CC3)OCO5)O",
+        "image": "mol_71.svg"
+    },
+    {
+        "id": "72",
+        "name": "Corysamine",
+        "class": "Protoberberine",
+        "molecular_formula": "C20H15NO4",
+        "smiles": "CC1=C2C=CC3=C(C2=C[N+]4=C1C5=CC6=C(C=C5CC4)OCO6)OCO3",
+        "image": "mol_72.svg"
+    },
+    {
+        "id": "73",
+        "name": "(S)-N-Methylstylopine",
+        "class": "Protoberberine",
+        "molecular_formula": "C20H19NO4",
+        "smiles": "C[N@@+]12CCC3=CC4=C(C=C3[C@@H]1CC5=C(C2)C6=C(C=C5)OCO6)OCO4",
+        "image": "mol_73.svg"
+    },
+    {
+        "id": "74",
+        "name": "8-Oxycoptisine",
+        "class": "Protoberberine",
+        "molecular_formula": "C19H13NO5",
+        "smiles": "COC1=C(C2=C3C(=C1)C=CN=C3C(=O)C4=CC5=C(C=C42)OCO5)OC",
+        "image": "mol_74.svg"
+    },
+    {
+        "id": "75",
+        "name": "Stylopine",
+        "class": "Protoberberine",
+        "molecular_formula": "C19H17NO4",
+        "smiles": "CC1(CO1)C2CC3=C(O2)C=C(C4=C3N(C5=CC=CC=C5C4=O)C)O",
+        "image": "mol_75.svg"
+    },
+    {
+        "id": "76",
+        "name": "Coptisine",
+        "class": "Protoberberine",
+        "molecular_formula": "C19H13NO4",
+        "smiles": "O1c3c(OC1)c2c[n+]6c(cc2cc3)c5cc4OCOc4cc5CC6",
+        "image": "mol_76.svg"
+    },
+    {
+        "id": "77",
+        "name": "Protopine",
+        "class": "Protopine",
+        "molecular_formula": "C20H19NO5",
+        "smiles": "C1C[N+]2=C(C=C3C=CC4=C(C3=C2)OCO4)C5=CC6=C(C=C51)OCO6",
+        "image": "mol_77.svg"
+    },
+    {
+        "id": "78",
+        "name": "Cryptopine",
+        "class": "Protopine",
+        "molecular_formula": "C21H23NO5",
+        "smiles": "CN1CCC2=CC(=C(C=C2C(=O)CC3=C(C1)C4=C(C=C3)OCO4)OC)OC",
+        "image": "mol_78.svg"
+    },
+    {
+        "id": "79",
+        "name": "Canadine",
+        "class": "Aporphine",
+        "molecular_formula": "C20H21NO4",
+        "smiles": "COC1=C(C2=C(C[C@@H]3C4=CC5=C(C=C4CCN3C2)OCO5)C=C1)OC",
+        "image": "mol_79.svg"
+    },
+    {
+        "id": "80",
+        "name": "Magnocurarine",
+        "class": "Aporphine",
+        "molecular_formula": "C19H23NO3",
+        "smiles": "CCOC1=CC=CC=C1OC(C2CNCCO2)C3=CC=CC=C3",
+        "image": "mol_80.svg"
+    },
+    {
+        "id": "81",
+        "name": "Magnoflorine",
+        "class": "Aporphine",
+        "molecular_formula": "C20H23NO4",
+        "smiles": "C1CC1CN2CC[C@]34[C@@H]5C(=O)CC[C@]3([C@H]2CC6=C4C(=C(C=C6)O)O5)O",
+        "image": "mol_81.svg"
+    },
+    {
+        "id": "82",
+        "name": "Norchelidonine",
+        "class": "Other",
+        "molecular_formula": "C19H17NO5",
+        "smiles": "COC1=CC=C(C=C1)C2=C(ON=C2C3=CC=C(C=C3)OC)CC(=O)O",
+        "image": "mol_82.svg"
+    },
+    {
+        "id": "83",
+        "name": "Noroxyhydrastinine",
+        "class": "Other",
+        "molecular_formula": "C10H9NO3",
+        "smiles": "C1=CC2=C(C=C1O)C(=CN2)CC(=O)O",
+        "image": "mol_83.svg"
+    },
+    {
+        "id": "84",
+        "name": "Indole-3-carboxaldehyde",
+        "class": "Other",
+        "molecular_formula": "C9H7NO",
+        "smiles": "C1=CC2=C(C(=C1)O)N=CC=C2",
+        "image": "mol_84.svg"
+    }
+]
