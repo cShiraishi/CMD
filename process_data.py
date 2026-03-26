@@ -10,6 +10,7 @@ import zipfile
 
 # Configuration
 INPUT_FILE = 'compounds_AnaB.xlsx'
+PARTS_FILE = 'all_84_compounds_plant_parts.xlsx'
 OUTPUT_DIR = 'assets/images'
 SDF_DIR = 'assets/sdf'
 DATA_FILE = 'data.json'
@@ -25,8 +26,21 @@ def process_data():
     try:
         df = pd.read_excel(INPUT_FILE)
         print(f"Loaded {len(df)} compounds from {INPUT_FILE}")
+        
+        try:
+            df_parts = pd.read_excel(PARTS_FILE)
+            df_parts['#'] = df_parts['#'].astype(str)
+            if 'Number' in df.columns:
+                df['Number_str'] = df['Number'].astype(str)
+            else:
+                df['Number_str'] = df.index.astype(str)
+            df = df.merge(df_parts[['#', 'Plant Part (C. majus)', 'Literature Note']], left_on='Number_str', right_on='#', how='left')
+            print(f"Successfully merged plant parts data from {PARTS_FILE}")
+        except Exception as e:
+            print(f"Note: Could not load plant parts ({e})")
+            
     except Exception as e:
-        print(f"Error loading Excel file: {e}")
+        print(f"Error loading main Excel file: {e}")
         return
 
     compounds_data = []
@@ -40,6 +54,8 @@ def process_data():
             compound_class = row.get('Class', 'Unclassified')
             molecular_formula = row.get('Molecular', 'N/A')
             referencias = str(row.get('Referencias', 'N/A'))
+            plant_part = str(row.get('Plant Part (C. majus)', 'N/A'))
+            literature_note = str(row.get('Literature Note', ''))
 
             if not isinstance(smiles, str) or not smiles:
                 print(f"Skipping row {index}: Invalid SMILES")
@@ -94,7 +110,9 @@ def process_data():
                     "hbd": hbd,
                     "hba": hba,
                     "lipinski_pass": lipinski_pass,
-                    "ro5_violations": ro5_violations
+                    "ro5_violations": ro5_violations,
+                    "plant_part": 'N/A' if plant_part == 'nan' else plant_part,
+                    "literature_note": '' if literature_note == 'nan' else literature_note
                 })
             else:
                 print(f"Failed to generate molecule for row {index} (SMILES: {smiles})")

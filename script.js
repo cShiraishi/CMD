@@ -140,6 +140,20 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span style="font-size: 0.75rem; color: #475569; text-align: right; word-break: break-word; max-width: 70%;" title="${compound.referencias}">${refHtml}</span>
                     </div>
 
+                    ${compound.plant_part && compound.plant_part !== 'N/A' ? `
+                    <div class="card-property" style="margin-top: 0.5rem; align-items: flex-start;">
+                        <span class="label" title="Plant Part (C. majus)">Part</span>
+                        <span style="font-size: 0.75rem; color: #475569; text-align: right; word-break: break-word; max-width: 70%;">${compound.plant_part}</span>
+                    </div>
+                    ` : ''}
+
+                    ${compound.literature_note ? `
+                    <div class="card-property" style="margin-top: 0.5rem; align-items: flex-start;">
+                        <span class="label">Note</span>
+                        <span style="font-size: 0.7rem; color: #64748b; text-align: right; word-break: break-word; max-width: 70%; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;" title="${compound.literature_note}">${compound.literature_note}</span>
+                    </div>
+                    ` : ''}
+
                     <div class="card-property" style="margin-top: 0.5rem;">
                         <span class="label" title="Lipinski's Rule of 5 for Drug-likeness">Drug-Likeness</span>
                         <span style="font-size: 0.75rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 9999px; ${compound.lipinski_pass ? 'background: #dcfce7; color: #166534;' : 'background: #fee2e2; color: #991b1b;'}">

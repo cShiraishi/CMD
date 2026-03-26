@@ -14,7 +14,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Phenolic acids distributed across leaves and stems of C. majus aerial parts"
     },
     {
         "id": "2",
@@ -31,7 +33,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Phenolic acids distributed across leaves and stems of C. majus aerial parts"
     },
     {
         "id": "3",
@@ -48,7 +52,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 2,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Identified in aerial parts extract; salicylic acid abundant (123.6 \u00b5g/g) in C. majus"
     },
     {
         "id": "4",
@@ -65,7 +71,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Phenolic acids distributed across leaves and stems of C. majus aerial parts"
     },
     {
         "id": "5",
@@ -82,7 +90,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Phenolic acids distributed across leaves and stems of C. majus aerial parts"
     },
     {
         "id": "6",
@@ -99,7 +109,9 @@ const compoundsData = [
         "hbd": 4,
         "hba": 8,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Ellagic acid identified from aerial parts of C. majus"
     },
     {
         "id": "7",
@@ -116,7 +128,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Hydroxycinnamic acids identified from aerial parts (Borges et al., 2025)"
     },
     {
         "id": "8",
@@ -133,7 +147,9 @@ const compoundsData = [
         "hbd": 6,
         "hba": 8,
         "lipinski_pass": true,
-        "ro5_violations": 1
+        "ro5_violations": 1,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Neochlorogenic acid from aerial parts of C. majus"
     },
     {
         "id": "9",
@@ -150,7 +166,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Caffeic acid (0.4%) reported in aerial parts (EMA monograph)"
     },
     {
         "id": "10",
@@ -167,7 +185,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Homovanillic acid from aerial parts of C. majus"
     },
     {
         "id": "11",
@@ -184,7 +204,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 2,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "p-Coumaric acid (0.06%) in aerial parts (EMA monograph)"
     },
     {
         "id": "12",
@@ -201,7 +223,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Ferulic acid (0.02%) in aerial parts (EMA monograph)"
     },
     {
         "id": "13",
@@ -218,7 +242,9 @@ const compoundsData = [
         "hbd": 7,
         "hba": 11,
         "lipinski_pass": false,
-        "ro5_violations": 3
+        "ro5_violations": 3,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "4,5-Dicaffeoylquinic acid from aerial parts; identified in C. majus extract (Borges et al., 2025)"
     },
     {
         "id": "14",
@@ -235,7 +261,9 @@ const compoundsData = [
         "hbd": 4,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (stems, seeds)",
+        "literature_note": "Feruloylagmatine from aerial parts of C. majus"
     },
     {
         "id": "15",
@@ -252,7 +280,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (stems, seeds)",
+        "literature_note": "p-Coumaroylputrescine identified in aerial parts"
     },
     {
         "id": "16",
@@ -269,7 +299,9 @@ const compoundsData = [
         "hbd": 4,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (stems, seeds)",
+        "literature_note": "N-Caffeoyltyramine from aerial parts of C. majus"
     },
     {
         "id": "17",
@@ -286,7 +318,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (stems, seeds)",
+        "literature_note": "p-Coumaroyltyramine abundant (111.8 \u00b5g/g) in C. majus aerial parts (Borges et al., 2025)"
     },
     {
         "id": "18",
@@ -303,7 +337,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (stems, seeds)",
+        "literature_note": "Feruloyltyramine from aerial parts of C. majus"
     },
     {
         "id": "19",
@@ -320,7 +356,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 2,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (stems, seeds)",
+        "literature_note": "p-Coumaroyltryptamine from aerial parts of C. majus"
     },
     {
         "id": "20",
@@ -337,7 +375,9 @@ const compoundsData = [
         "hbd": 5,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Catechin identified in aerial parts; leaves show highest flavonoid content"
     },
     {
         "id": "21",
@@ -354,7 +394,9 @@ const compoundsData = [
         "hbd": 5,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Epicatechin from aerial parts of C. majus; leaves/flowers"
     },
     {
         "id": "22",
@@ -371,7 +413,9 @@ const compoundsData = [
         "hbd": 8,
         "hba": 15,
         "lipinski_pass": false,
-        "ro5_violations": 3
+        "ro5_violations": 3,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Hesperidin identified in C. majus aerial parts (Borges et al., 2025)"
     },
     {
         "id": "23",
@@ -388,7 +432,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 5,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Naringenin from aerial parts of C. majus"
     },
     {
         "id": "24",
@@ -405,7 +451,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Hesperetin from aerial parts of C. majus"
     },
     {
         "id": "25",
@@ -422,7 +470,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Pinocembrin abundant (98.4 \u00b5g/g) in C. majus aerial parts (Borges et al., 2025)"
     },
     {
         "id": "26",
@@ -439,7 +489,9 @@ const compoundsData = [
         "hbd": 7,
         "hba": 10,
         "lipinski_pass": true,
-        "ro5_violations": 1
+        "ro5_violations": 1,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Vitexin from aerial parts of C. majus (Borges et al., 2025)"
     },
     {
         "id": "27",
@@ -456,7 +508,9 @@ const compoundsData = [
         "hbd": 7,
         "hba": 11,
         "lipinski_pass": false,
-        "ro5_violations": 2
+        "ro5_violations": 2,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Cynaroside (luteolin-7-glucoside) from aerial parts"
     },
     {
         "id": "28",
@@ -473,7 +527,9 @@ const compoundsData = [
         "hbd": 8,
         "hba": 15,
         "lipinski_pass": false,
-        "ro5_violations": 3
+        "ro5_violations": 3,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Diosmin identified in C. majus aerial parts"
     },
     {
         "id": "29",
@@ -490,7 +546,9 @@ const compoundsData = [
         "hbd": 6,
         "hba": 10,
         "lipinski_pass": true,
-        "ro5_violations": 1
+        "ro5_violations": 1,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Apigetrin from aerial parts of C. majus"
     },
     {
         "id": "30",
@@ -507,7 +565,9 @@ const compoundsData = [
         "hbd": 6,
         "hba": 11,
         "lipinski_pass": false,
-        "ro5_violations": 2
+        "ro5_violations": 2,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Diosmetin-7-glucoside from aerial parts of C. majus"
     },
     {
         "id": "31",
@@ -524,7 +584,9 @@ const compoundsData = [
         "hbd": 4,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Luteolin/Scutellarein from aerial parts of C. majus"
     },
     {
         "id": "32",
@@ -541,7 +603,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 5,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Apigenin from aerial parts of C. majus"
     },
     {
         "id": "33",
@@ -558,7 +622,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, flowers)",
+        "literature_note": "Diosmetin from aerial parts of C. majus"
     },
     {
         "id": "34",
@@ -575,7 +641,9 @@ const compoundsData = [
         "hbd": 12,
         "hba": 21,
         "lipinski_pass": false,
-        "ro5_violations": 3
+        "ro5_violations": 3,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Isorhamnetin-rutinoside-glucoside from leaves of C. majus; leaves have highest flavonoid content"
     },
     {
         "id": "35",
@@ -592,7 +660,9 @@ const compoundsData = [
         "hbd": 12,
         "hba": 20,
         "lipinski_pass": false,
-        "ro5_violations": 3
+        "ro5_violations": 3,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Quercetin-3-rhamnosylrutinoside from aerial parts (Borges et al., 2025)"
     },
     {
         "id": "36",
@@ -609,7 +679,9 @@ const compoundsData = [
         "hbd": 11,
         "hba": 20,
         "lipinski_pass": false,
-        "ro5_violations": 3
+        "ro5_violations": 3,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Isorhamnetin rutinoside-rhamnoside from aerial parts of C. majus"
     },
     {
         "id": "37",
@@ -626,7 +698,9 @@ const compoundsData = [
         "hbd": 10,
         "hba": 16,
         "lipinski_pass": false,
-        "ro5_violations": 3
+        "ro5_violations": 3,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Rutin (quercetin-3-rutinoside) reported in aerial parts of C. majus"
     },
     {
         "id": "38",
@@ -643,7 +717,9 @@ const compoundsData = [
         "hbd": 8,
         "hba": 12,
         "lipinski_pass": false,
-        "ro5_violations": 2
+        "ro5_violations": 2,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Quercetin-glucoside from aerial parts of C. majus"
     },
     {
         "id": "39",
@@ -660,7 +736,9 @@ const compoundsData = [
         "hbd": 9,
         "hba": 15,
         "lipinski_pass": false,
-        "ro5_violations": 3
+        "ro5_violations": 3,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Kaempferol 3-rutinoside from aerial parts of C. majus (Borges et al., 2025)"
     },
     {
         "id": "40",
@@ -677,7 +755,9 @@ const compoundsData = [
         "hbd": 9,
         "hba": 16,
         "lipinski_pass": false,
-        "ro5_violations": 3
+        "ro5_violations": 3,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Isorhamnetin rutinoside from aerial parts of C. majus"
     },
     {
         "id": "41",
@@ -694,7 +774,9 @@ const compoundsData = [
         "hbd": 7,
         "hba": 11,
         "lipinski_pass": false,
-        "ro5_violations": 2
+        "ro5_violations": 2,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Guaiaverin/Reynoutrin from aerial parts of C. majus"
     },
     {
         "id": "42",
@@ -711,7 +793,9 @@ const compoundsData = [
         "hbd": 7,
         "hba": 11,
         "lipinski_pass": false,
-        "ro5_violations": 2
+        "ro5_violations": 2,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Quercitrin/Quercetin 3-rhamnoside from aerial parts of C. majus"
     },
     {
         "id": "43",
@@ -728,7 +812,9 @@ const compoundsData = [
         "hbd": 7,
         "hba": 12,
         "lipinski_pass": false,
-        "ro5_violations": 2
+        "ro5_violations": 2,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Isorhamnetin-3-glucoside from aerial parts of C. majus"
     },
     {
         "id": "44",
@@ -745,7 +831,9 @@ const compoundsData = [
         "hbd": 5,
         "hba": 7,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Quercetin identified in aerial parts; widely reported in C. majus"
     },
     {
         "id": "45",
@@ -762,7 +850,9 @@ const compoundsData = [
         "hbd": 4,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Kaempferol from aerial parts; identified in C. majus aerial parts"
     },
     {
         "id": "46",
@@ -779,7 +869,9 @@ const compoundsData = [
         "hbd": 4,
         "hba": 7,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves)",
+        "literature_note": "Isorhamnetin from aerial parts of C. majus"
     },
     {
         "id": "47",
@@ -796,7 +888,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Esculetin/Aesculetin from aerial parts of C. majus"
     },
     {
         "id": "48",
@@ -813,7 +907,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Umbelliferone from aerial parts of C. majus"
     },
     {
         "id": "49",
@@ -830,7 +926,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Scoparone from aerial parts of C. majus"
     },
     {
         "id": "50",
@@ -847,7 +945,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves, stems)",
+        "literature_note": "Scopoletin from aerial parts of C. majus"
     },
     {
         "id": "51",
@@ -864,7 +964,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Resveratrol identified in C. majus aerial parts (Borges et al., 2025)"
     },
     {
         "id": "52",
@@ -881,7 +983,9 @@ const compoundsData = [
         "hbd": 4,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Piceatannol from aerial parts of C. majus"
     },
     {
         "id": "53",
@@ -898,7 +1002,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Syringaldehyde from aerial parts of C. majus"
     },
     {
         "id": "54",
@@ -915,7 +1021,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Vanillin from aerial parts of C. majus"
     },
     {
         "id": "55",
@@ -932,7 +1040,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Protocatechualdehyde from aerial parts of C. majus"
     },
     {
         "id": "56",
@@ -949,7 +1059,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 3,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Hydrotyrosol from aerial parts of C. majus"
     },
     {
         "id": "57",
@@ -966,7 +1078,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 1,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Phenylacetic acid from aerial parts of C. majus"
     },
     {
         "id": "58",
@@ -983,7 +1097,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts, roots and latex",
+        "literature_note": "Sanguinarine predominant in roots; found throughout plant via latex (0.27\u20132.25% aerial; 3\u20134% roots)"
     },
     {
         "id": "59",
@@ -1000,7 +1116,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts, roots and latex",
+        "literature_note": "Chelerythrine in roots and aerial parts; concentrated in latex; prominent in roots"
     },
     {
         "id": "60",
@@ -1017,7 +1135,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 5,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts and roots",
+        "literature_note": "Dihydrochelerythrine isolated from roots and aerial parts of C. majus"
     },
     {
         "id": "61",
@@ -1034,7 +1154,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 5,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts and roots",
+        "literature_note": "Dihydrosanguinarine predominates in roots (in vitro cultures, Zielinska et al., 2018)"
     },
     {
         "id": "62",
@@ -1051,7 +1173,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts and roots",
+        "literature_note": "Oxychelerythrine from aerial parts and roots of C. majus"
     },
     {
         "id": "63",
@@ -1068,7 +1192,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Whole plant (aerial parts and roots)",
+        "literature_note": "Norchelidonine isolated from whole plant of C. majus (Kadan et al., 1992)"
     },
     {
         "id": "64",
@@ -1085,7 +1211,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts and roots",
+        "literature_note": "Oxysanguinarine from aerial parts and roots of C. majus"
     },
     {
         "id": "65",
@@ -1102,7 +1230,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts, roots and latex",
+        "literature_note": "Chelidonine: major alkaloid in aerial parts and roots; latex 32x higher concentration than leaves"
     },
     {
         "id": "67",
@@ -1119,7 +1249,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 7,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Chelamine isolated from aerial parts of C. majus"
     },
     {
         "id": "68",
@@ -1136,7 +1268,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Chelamidine isolated from aerial parts of C. majus"
     },
     {
         "id": "69",
@@ -1153,7 +1287,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts and roots",
+        "literature_note": "(+)-Homochelidonine from aerial parts and roots of C. majus"
     },
     {
         "id": "70",
@@ -1170,7 +1306,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts, roots and latex",
+        "literature_note": "Berberine in aerial parts and roots; present in latex; widely distributed in whole plant"
     },
     {
         "id": "71",
@@ -1187,7 +1325,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts and roots",
+        "literature_note": "Berberrubine from aerial parts and roots of C. majus"
     },
     {
         "id": "72",
@@ -1204,7 +1344,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts and roots",
+        "literature_note": "Corysamine from aerial parts and roots of C. majus"
     },
     {
         "id": "73",
@@ -1221,7 +1363,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "N-Methylstylopine from aerial parts of C. majus"
     },
     {
         "id": "74",
@@ -1238,7 +1382,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "8-Oxycoptisine from aerial parts of C. majus"
     },
     {
         "id": "75",
@@ -1255,7 +1401,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 5,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts (leaves) and roots",
+        "literature_note": "Stylopine: major component of leaves of C. majus; also present in roots (Jang et al., 2004)"
     },
     {
         "id": "76",
@@ -1272,7 +1420,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts and roots",
+        "literature_note": "Coptisine dominant in aerial shoots; also roots; high in latex; main alkaloid of herb (EMA)"
     },
     {
         "id": "77",
@@ -1289,7 +1439,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts and roots",
+        "literature_note": "Protopine isolated from roots and aerial parts; isolated from celandine roots (Jusiak et al., 1989)"
     },
     {
         "id": "78",
@@ -1306,7 +1458,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 6,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts and roots",
+        "literature_note": "Cryptopine from aerial parts and roots of C. majus"
     },
     {
         "id": "79",
@@ -1323,7 +1477,9 @@ const compoundsData = [
         "hbd": 0,
         "hba": 5,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts, roots and latex",
+        "literature_note": "Canadine (tetrahydroberberine) in latex and whole plant of C. majus"
     },
     {
         "id": "80",
@@ -1340,7 +1496,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 4,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Magnocurarine from aerial parts of C. majus"
     },
     {
         "id": "81",
@@ -1357,7 +1515,9 @@ const compoundsData = [
         "hbd": 2,
         "hba": 5,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts and roots",
+        "literature_note": "Magnoflorine from aerial parts and roots of C. majus"
     },
     {
         "id": "82",
@@ -1374,7 +1534,9 @@ const compoundsData = [
         "hbd": 1,
         "hba": 5,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Whole plant (aerial parts and roots)",
+        "literature_note": "Norchelidonine from whole plant of C. majus"
     },
     {
         "id": "83",
@@ -1391,7 +1553,9 @@ const compoundsData = [
         "hbd": 3,
         "hba": 2,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Noroxyhydrastinine from aerial parts of C. majus"
     },
     {
         "id": "84",
@@ -1408,6 +1572,8 @@ const compoundsData = [
         "hbd": 1,
         "hba": 2,
         "lipinski_pass": true,
-        "ro5_violations": 0
+        "ro5_violations": 0,
+        "plant_part": "Aerial parts",
+        "literature_note": "Indole-3-carboxaldehyde from aerial parts of C. majus"
     }
 ];
