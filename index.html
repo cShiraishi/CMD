@@ -17,8 +17,8 @@
     <div class="background-glob"></div>
     <div class="container">
         <header>
-            <img src="assets/images/logo.png" alt="Chelidonium majus L. Database Logo" class="site-logo">
-            <h1>Chelidonium majus L. Database</h1>
+            <img src="assets/images/logo.png" alt="Database Logo" class="site-logo">
+            <h1><i>Chelidonium majus</i> L. Database</h1>
             <p class="subtitle">Interactive database of bioactive compounds</p>
 
             <div class="search-bar">
@@ -40,21 +40,21 @@
                     </select>
                 </div>
                 <div class="filter-group">
-                    <label>MW</label>
+                    <label>MW (g/mol)</label>
                     <div class="range-inputs">
                         <input type="number" id="mwMin" placeholder="Min" step="10">
                         <input type="number" id="mwMax" placeholder="Max" step="10">
                     </div>
                 </div>
                 <div class="filter-group">
-                    <label>LogP</label>
+                    <label>Log <i>P</i></label>
                     <div class="range-inputs">
                         <input type="number" id="logpMin" placeholder="Min" step="0.1">
                         <input type="number" id="logpMax" placeholder="Max" step="0.1">
                     </div>
                 </div>
                 <div class="filter-group">
-                    <label>TPSA</label>
+                    <label>TPSA (Å²)</label>
                     <div class="range-inputs">
                         <input type="number" id="tpsaMin" placeholder="Min" step="10">
                         <input type="number" id="tpsaMax" placeholder="Max" step="10">
@@ -96,15 +96,15 @@
                     <canvas id="classChart"></canvas>
                 </div>
                 <div class="chart-container">
-                    <h3>Molecular Weight Distribution</h3>
+                    <h3>Molecular Weight (g/mol)</h3>
                     <canvas id="mwChart"></canvas>
                 </div>
                 <div class="chart-container">
-                    <h3>LogP Distribution</h3>
+                    <h3>Log <i>P</i> Distribution</h3>
                     <canvas id="logpChart"></canvas>
                 </div>
                 <div class="chart-container">
-                    <h3>TPSA Distribution</h3>
+                    <h3>TPSA (Å²) Distribution</h3>
                     <canvas id="tpsaChart"></canvas>
                 </div>
             </div>

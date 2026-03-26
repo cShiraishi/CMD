@@ -139,15 +139,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     <div class="card-stats" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; margin: 1rem 0; text-align: center; border-top: 1px solid rgba(148, 163, 184, 0.1); padding-top: 0.5rem;">
                         <div class="stat-item">
-                            <span class="label" style="display:block; font-size: 0.7rem;">MW</span>
+                            <span class="label" style="display:block; font-size: 0.7rem;">MW (g/mol)</span>
                             <span class="value" style="font-weight: 600; color: #38bdf8;">${compound.mw}</span>
                         </div>
                         <div class="stat-item">
-                            <span class="label" style="display:block; font-size: 0.7rem;">LogP</span>
+                            <span class="label" style="display:block; font-size: 0.7rem;">Log <i>P</i></span>
                             <span class="value" style="font-weight: 600; color: #818cf8;">${compound.logp}</span>
                         </div>
                         <div class="stat-item">
-                            <span class="label" style="display:block; font-size: 0.7rem;">TPSA</span>
+                            <span class="label" style="display:block; font-size: 0.7rem;">TPSA (Å²)</span>
                             <span class="value" style="font-weight: 600; color: #38bdf8;">${compound.tpsa}</span>
                         </div>
                     </div>
