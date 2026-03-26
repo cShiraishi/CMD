@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     
                     <div class="card-property">
-                        <span class="label">Formula</span>
+                        <span class="label">Molecular Formula</span>
                         <span>${compound.molecular_formula}</span>
                     </div>
 
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
 
                     <div class="card-property" style="margin-top: 0.5rem; align-items: flex-start;">
-                        <span class="label">Refs</span>
+                        <span class="label">References</span>
                         <span style="font-size: 0.75rem; color: #475569; text-align: right; word-break: break-word; max-width: 70%;" title="${compound.referencias}">${refHtml}</span>
                     </div>
 
