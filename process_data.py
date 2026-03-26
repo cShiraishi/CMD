@@ -7,7 +7,7 @@ from rdkit.Chem import rdDepictor
 from rdkit.Chem import Descriptors
 
 # Configuration
-INPUT_FILE = 'compounds.xlsx'
+INPUT_FILE = 'compounds_AnaB.xlsx'
 OUTPUT_DIR = 'assets/images'
 SDF_DIR = 'assets/sdf'
 DATA_FILE = 'data.json'
@@ -37,6 +37,7 @@ def process_data():
             name = row.get('Name', f'Compound {compound_id}')
             compound_class = row.get('Class', 'Unclassified')
             molecular_formula = row.get('Molecular', 'N/A')
+            referencias = str(row.get('Referencias', 'N/A'))
 
             if not isinstance(smiles, str) or not smiles:
                 print(f"Skipping row {index}: Invalid SMILES")
@@ -73,6 +74,7 @@ def process_data():
                     "name": name,
                     "class": compound_class,
                     "molecular_formula": molecular_formula,
+                    "referencias": referencias,
                     "smiles": smiles,
                     "image": image_filename,
                     "sdf": sdf_filename,

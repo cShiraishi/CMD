@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cardGrid = document.getElementById('cardGrid');
     const searchInput = document.getElementById('searchInput');
+    const classFilter = document.getElementById('classFilter');
 
     // Filter Inputs
     const mwMin = document.getElementById('mwMin');
@@ -18,6 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('No data found in compoundsData');
         cardGrid.innerHTML = '<p style="text-align:center; grid-column: 1/-1; color: #94a3b8;">Error: No data loaded. Please check data.js.</p>';
     } else {
+        const uniqueClasses = [...new Set(allCompounds.map(c => c.class).filter(c => c && c !== 'Unclassified'))].sort();
+        uniqueClasses.forEach(c => {
+            const option = document.createElement('option');
+            option.value = c;
+            option.textContent = c;
+            classFilter.appendChild(option);
+        });
+
         renderCards(allCompounds);
     }
 
@@ -90,8 +99,19 @@ document.addEventListener('DOMContentLoaded', () => {
             // Fallback for long names
             const displayName = compound.name.length > 25 ? compound.name.substring(0, 22) + '...' : compound.name;
 
+            let refHtml = compound.referencias || 'N/A';
+            if (refHtml !== 'N/A') {
+                const trimmedRef = refHtml.trim();
+                if (trimmedRef.startsWith('http')) {
+                    refHtml = `<a href="${trimmedRef}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color); text-decoration: none; font-weight: 500;">Article Link ↗</a>`;
+                } else if (trimmedRef.startsWith('10.')) {
+                    refHtml = `<a href="https://doi.org/${trimmedRef}" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color); text-decoration: none; font-weight: 500;">DOI ↗</a>`;
+                }
+            }
+
             card.innerHTML = `
-                <div class="card-image">
+                <div class="card-image" style="position: relative;">
+                    ${compound.class && compound.class !== 'Unclassified' ? `<span class="tag" style="position: absolute; top: 1rem; left: 1rem; margin: 0; background-color: rgba(56, 189, 248, 0.9); color: white; padding: 0.25rem 0.5rem; text-shadow: 0 1px 2px rgba(0,0,0,0.1); border-radius: 0.25rem; z-index: 10;">${compound.class}</span>` : ''}
                     <img src="assets/images/${compound.image}" alt="${compound.name}" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIvPjxsaW5lIHgxPSIxMiIgeTE9IjgiIHgyPSIxMiIgeTI9IjEyIi8+PGxpbmUgeDE9IjEyIiB5MT0iMTYiIHgyPSIxMi4wMSIgeTI9IjE2Ii8+PC9zdmc+'">
                 </div>
                 <div class="card-content">
@@ -110,6 +130,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="card-property">
                         <span class="label">SMILES</span>
                         <span class="smiles-text" title="${compound.smiles}">${compound.smiles}</span>
+                    </div>
+
+                    <div class="card-property" style="margin-top: 0.5rem; align-items: flex-start;">
+                        <span class="label">Refs</span>
+                        <span style="font-size: 0.75rem; color: #475569; text-align: right; word-break: break-word; max-width: 70%;" title="${compound.referencias}">${refHtml}</span>
                     </div>
 
                     <div class="card-stats" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; margin: 1rem 0; text-align: center; border-top: 1px solid rgba(148, 163, 184, 0.1); padding-top: 0.5rem;">
