@@ -129,7 +129,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     <div class="card-property">
                         <span class="label">SMILES</span>
-                        <span class="smiles-text" title="${compound.smiles}">${compound.smiles}</span>
+                        <div style="display: flex; align-items: flex-start; gap: 0.5rem; justify-content: flex-end;">
+                            <span class="smiles-text" title="${compound.smiles}" style="margin: 0;">${compound.smiles}</span>
+                            <button class="copy-btn" onclick="navigator.clipboard.writeText('${compound.smiles}').then(() => {let tmp=this.innerHTML; this.innerHTML='Copied!'; setTimeout(()=>this.innerHTML=tmp, 1500)})" style="background: none; border: 1px solid var(--card-border); border-radius: 4px; padding: 2px 6px; cursor: pointer; color: var(--accent-color); font-size: 0.7rem; transition: background 0.3s; margin-top: 2px;">Copy</button>
+                        </div>
                     </div>
 
                     <div class="card-property" style="margin-top: 0.5rem; align-items: flex-start;">
@@ -137,18 +140,33 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span style="font-size: 0.75rem; color: #475569; text-align: right; word-break: break-word; max-width: 70%;" title="${compound.referencias}">${refHtml}</span>
                     </div>
 
-                    <div class="card-stats" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; margin: 1rem 0; text-align: center; border-top: 1px solid rgba(148, 163, 184, 0.1); padding-top: 0.5rem;">
-                        <div class="stat-item">
-                            <span class="label" style="display:block; font-size: 0.7rem;">MW (g/mol)</span>
-                            <span class="value" style="font-weight: 600; color: #38bdf8;">${compound.mw}</span>
+                    <div class="card-property" style="margin-top: 0.5rem;">
+                        <span class="label" title="Lipinski's Rule of 5 for Drug-likeness">Drug-Likeness</span>
+                        <span style="font-size: 0.75rem; font-weight: 600; padding: 0.15rem 0.5rem; border-radius: 9999px; ${compound.lipinski_pass ? 'background: #dcfce7; color: #166534;' : 'background: #fee2e2; color: #991b1b;'}">
+                            ${compound.lipinski_pass ? 'Ro5 Compliant' : `Violates Ro5 (${compound.ro5_violations})`}
+                        </span>
+                    </div>
+
+                    <div class="card-stats" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.25rem; margin: 1rem 0; text-align: center; border-top: 1px solid rgba(148, 163, 184, 0.1); padding-top: 0.5rem;">
+                        <div class="stat-item" title="Molecular Weight">
+                            <span class="label" style="display:block; font-size: 0.65rem;">MW</span>
+                            <span class="value" style="font-weight: 600; color: #38bdf8; font-size: 0.8rem;">${compound.mw}</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="label" style="display:block; font-size: 0.7rem;">Log <i>P</i></span>
-                            <span class="value" style="font-weight: 600; color: #818cf8;">${compound.logp}</span>
+                        <div class="stat-item" title="Lipophilicity">
+                            <span class="label" style="display:block; font-size: 0.65rem;">Log<i>P</i></span>
+                            <span class="value" style="font-weight: 600; color: #818cf8; font-size: 0.8rem;">${compound.logp}</span>
                         </div>
-                        <div class="stat-item">
-                            <span class="label" style="display:block; font-size: 0.7rem;">TPSA (Å²)</span>
-                            <span class="value" style="font-weight: 600; color: #38bdf8;">${compound.tpsa}</span>
+                        <div class="stat-item" title="Topological Polar Surface Area">
+                            <span class="label" style="display:block; font-size: 0.65rem;">TPSA</span>
+                            <span class="value" style="font-weight: 600; color: #38bdf8; font-size: 0.8rem;">${compound.tpsa}</span>
+                        </div>
+                        <div class="stat-item" title="H-Bond Donors">
+                            <span class="label" style="display:block; font-size: 0.65rem;">HBD</span>
+                            <span class="value" style="font-weight: 600; color: #34d399; font-size: 0.8rem;">${compound.hbd}</span>
+                        </div>
+                        <div class="stat-item" title="H-Bond Acceptors">
+                            <span class="label" style="display:block; font-size: 0.65rem;">HBA</span>
+                            <span class="value" style="font-weight: 600; color: #34d399; font-size: 0.8rem;">${compound.hba}</span>
                         </div>
                     </div>
 
@@ -188,7 +206,25 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.target === analyticsModal) {
             analyticsModal.style.display = 'none';
         }
+        if (event.target === citeUsModal) {
+            citeUsModal.style.display = 'none';
+        }
     });
+
+    // Cite Us Modal
+    const citeUsBtn = document.getElementById('citeUsBtn');
+    const citeUsModal = document.getElementById('citeUsModal');
+    const closeCiteUs = document.getElementById('closeCiteUs');
+
+    if (citeUsBtn && citeUsModal && closeCiteUs) {
+        citeUsBtn.addEventListener('click', () => {
+            citeUsModal.style.display = 'block';
+        });
+
+        closeCiteUs.addEventListener('click', () => {
+            citeUsModal.style.display = 'none';
+        });
+    }
 
     function generateCharts() {
         if (!allCompounds.length) return;

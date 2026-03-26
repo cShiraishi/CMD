@@ -63,6 +63,7 @@
                 <button id="resetFilters" class="reset-btn">Reset Filters</button>
                 <button id="analyticsBtn" class="analytics-btn">Analytics 📊</button>
                 <a href="compounds_AnaB.xlsx" download="Database_AnaB.xlsx" class="analytics-btn" style="text-decoration: none; line-height: 22px; display: inline-block;">Download DB 📥</a>
+                <a href="assets/all_structures.zip" download="All_SDF_Structures.zip" class="analytics-btn" style="text-decoration: none; line-height: 22px; display: inline-block;">Download All SDF 🗂️</a>
             </div>
         </header>
 
@@ -72,6 +73,7 @@
 
         <footer>
             <p>&copy; 2026 Molecule Explorer. Generated from scientific data.</p>
+            <button id="citeUsBtn" class="reset-btn" style="margin-top: 1rem; border-color: #94a3b8; color: #64748b;">How to Cite</button>
         </footer>
     </div>
 
@@ -107,6 +109,33 @@
                     <h3>TPSA (Å²) Distribution</h3>
                     <canvas id="tpsaChart"></canvas>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cite Us Modal -->
+    <div id="citeUsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeCiteUs">&times;</span>
+            <h2>How to Cite</h2>
+            <p style="margin-top: 1rem; color: #475569;">If you use this database in your scientific research, please cite:</p>
+            
+            <div style="margin-top: 1.5rem;">
+                <h4 style="margin-bottom: 0.5rem; color: #1e293b;">APA Format</h4>
+                <div style="background: rgba(148, 163, 184, 0.1); padding: 1rem; border-radius: 0.5rem; font-family: 'Courier New', monospace; font-size: 0.9rem; position: relative;">
+                    <i>Chelidonium majus</i> L. Bioactive Compounds Database. (2026). Molecule Explorer. Retrieved from [Insert URL]
+                </div>
+            </div>
+            
+            <div style="margin-top: 1.5rem;">
+                <h4 style="margin-bottom: 0.5rem; color: #1e293b;">BibTeX Format</h4>
+                <div style="background: rgba(148, 163, 184, 0.1); padding: 1rem; border-radius: 0.5rem; font-family: 'Courier New', monospace; font-size: 0.9rem; white-space: pre-wrap; position: relative;">
+@misc{chelidonium_database_2026,
+    title = {Chelidonium majus L. Bioactive Compounds Database},
+    author = {Molecule Explorer},
+    year = {2026},
+    howpublished = {\url{[Insert URL]}}
+}</div>
             </div>
         </div>
     </div>

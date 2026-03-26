@@ -10,7 +10,11 @@ const compoundsData = [
         "sdf": "mol_1.sdf",
         "mw": 154.03,
         "logp": 0.8,
-        "tpsa": 77.76
+        "tpsa": 77.76,
+        "hbd": 3,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "2",
@@ -23,7 +27,11 @@ const compoundsData = [
         "sdf": "mol_2.sdf",
         "mw": 182.06,
         "logp": 1.4,
-        "tpsa": 55.76
+        "tpsa": 55.76,
+        "hbd": 1,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "3",
@@ -36,7 +44,11 @@ const compoundsData = [
         "sdf": "mol_3.sdf",
         "mw": 138.03,
         "logp": 1.09,
-        "tpsa": 57.53
+        "tpsa": 57.53,
+        "hbd": 2,
+        "hba": 2,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "4",
@@ -49,7 +61,11 @@ const compoundsData = [
         "sdf": "mol_4.sdf",
         "mw": 152.05,
         "logp": 1.18,
-        "tpsa": 46.53
+        "tpsa": 46.53,
+        "hbd": 1,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "5",
@@ -62,7 +78,11 @@ const compoundsData = [
         "sdf": "mol_5.sdf",
         "mw": 168.04,
         "logp": 1.1,
-        "tpsa": 66.76
+        "tpsa": 66.76,
+        "hbd": 2,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "6",
@@ -75,7 +95,11 @@ const compoundsData = [
         "sdf": "mol_6.sdf",
         "mw": 302.01,
         "logp": 1.31,
-        "tpsa": 141.34
+        "tpsa": 141.34,
+        "hbd": 4,
+        "hba": 8,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "7",
@@ -88,7 +112,11 @@ const compoundsData = [
         "sdf": "mol_7.sdf",
         "mw": 182.06,
         "logp": 1.11,
-        "tpsa": 77.76
+        "tpsa": 77.76,
+        "hbd": 3,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "8",
@@ -101,7 +129,11 @@ const compoundsData = [
         "sdf": "mol_8.sdf",
         "mw": 354.1,
         "logp": -0.65,
-        "tpsa": 164.75
+        "tpsa": 164.75,
+        "hbd": 6,
+        "hba": 8,
+        "lipinski_pass": true,
+        "ro5_violations": 1
     },
     {
         "id": "9",
@@ -114,7 +146,11 @@ const compoundsData = [
         "sdf": "mol_9.sdf",
         "mw": 180.04,
         "logp": 1.2,
-        "tpsa": 77.76
+        "tpsa": 77.76,
+        "hbd": 3,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "10",
@@ -127,7 +163,11 @@ const compoundsData = [
         "sdf": "mol_10.sdf",
         "mw": 182.06,
         "logp": 1.03,
-        "tpsa": 66.76
+        "tpsa": 66.76,
+        "hbd": 2,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "11",
@@ -140,7 +180,11 @@ const compoundsData = [
         "sdf": "mol_11.sdf",
         "mw": 164.05,
         "logp": 1.49,
-        "tpsa": 57.53
+        "tpsa": 57.53,
+        "hbd": 2,
+        "hba": 2,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "12",
@@ -153,7 +197,11 @@ const compoundsData = [
         "sdf": "mol_12.sdf",
         "mw": 194.06,
         "logp": 1.5,
-        "tpsa": 66.76
+        "tpsa": 66.76,
+        "hbd": 2,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "13",
@@ -166,7 +214,11 @@ const compoundsData = [
         "sdf": "mol_13.sdf",
         "mw": 516.13,
         "logp": 1.03,
-        "tpsa": 211.28
+        "tpsa": 211.28,
+        "hbd": 7,
+        "hba": 11,
+        "lipinski_pass": false,
+        "ro5_violations": 3
     },
     {
         "id": "14",
@@ -179,7 +231,11 @@ const compoundsData = [
         "sdf": "mol_14.sdf",
         "mw": 306.17,
         "logp": 0.58,
-        "tpsa": 122.96
+        "tpsa": 122.96,
+        "hbd": 4,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "15",
@@ -192,7 +248,11 @@ const compoundsData = [
         "sdf": "mol_15.sdf",
         "mw": 234.14,
         "logp": 1.26,
-        "tpsa": 75.35
+        "tpsa": 75.35,
+        "hbd": 3,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "16",
@@ -205,7 +265,11 @@ const compoundsData = [
         "sdf": "mol_16.sdf",
         "mw": 299.12,
         "logp": 2.18,
-        "tpsa": 89.79
+        "tpsa": 89.79,
+        "hbd": 4,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "17",
@@ -218,7 +282,11 @@ const compoundsData = [
         "sdf": "mol_17.sdf",
         "mw": 283.12,
         "logp": 2.47,
-        "tpsa": 69.56
+        "tpsa": 69.56,
+        "hbd": 3,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "18",
@@ -231,7 +299,11 @@ const compoundsData = [
         "sdf": "mol_18.sdf",
         "mw": 313.13,
         "logp": 2.48,
-        "tpsa": 78.79
+        "tpsa": 78.79,
+        "hbd": 3,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "19",
@@ -244,7 +316,11 @@ const compoundsData = [
         "sdf": "mol_19.sdf",
         "mw": 306.14,
         "logp": 3.25,
-        "tpsa": 65.12
+        "tpsa": 65.12,
+        "hbd": 3,
+        "hba": 2,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "20",
@@ -257,7 +333,11 @@ const compoundsData = [
         "sdf": "mol_20.sdf",
         "mw": 290.08,
         "logp": 1.55,
-        "tpsa": 110.38
+        "tpsa": 110.38,
+        "hbd": 5,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "21",
@@ -270,7 +350,11 @@ const compoundsData = [
         "sdf": "mol_21.sdf",
         "mw": 290.08,
         "logp": 1.55,
-        "tpsa": 110.38
+        "tpsa": 110.38,
+        "hbd": 5,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "22",
@@ -283,7 +367,11 @@ const compoundsData = [
         "sdf": "mol_22.sdf",
         "mw": 610.19,
         "logp": -1.16,
-        "tpsa": 234.29
+        "tpsa": 234.29,
+        "hbd": 8,
+        "hba": 15,
+        "lipinski_pass": false,
+        "ro5_violations": 3
     },
     {
         "id": "23",
@@ -296,7 +384,11 @@ const compoundsData = [
         "sdf": "mol_23.sdf",
         "mw": 272.07,
         "logp": 2.51,
-        "tpsa": 86.99
+        "tpsa": 86.99,
+        "hbd": 3,
+        "hba": 5,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "24",
@@ -309,7 +401,11 @@ const compoundsData = [
         "sdf": "mol_24.sdf",
         "mw": 302.08,
         "logp": 2.52,
-        "tpsa": 96.22
+        "tpsa": 96.22,
+        "hbd": 3,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "25",
@@ -322,7 +418,11 @@ const compoundsData = [
         "sdf": "mol_25.sdf",
         "mw": 256.07,
         "logp": 2.8,
-        "tpsa": 66.76
+        "tpsa": 66.76,
+        "hbd": 2,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "26",
@@ -335,7 +435,11 @@ const compoundsData = [
         "sdf": "mol_26.sdf",
         "mw": 432.11,
         "logp": 0.09,
-        "tpsa": 181.05
+        "tpsa": 181.05,
+        "hbd": 7,
+        "hba": 10,
+        "lipinski_pass": true,
+        "ro5_violations": 1
     },
     {
         "id": "27",
@@ -348,7 +452,11 @@ const compoundsData = [
         "sdf": "mol_27.sdf",
         "mw": 448.1,
         "logp": -0.24,
-        "tpsa": 190.28
+        "tpsa": 190.28,
+        "hbd": 7,
+        "hba": 11,
+        "lipinski_pass": false,
+        "ro5_violations": 2
     },
     {
         "id": "28",
@@ -361,7 +469,11 @@ const compoundsData = [
         "sdf": "mol_28.sdf",
         "mw": 608.17,
         "logp": -1.09,
-        "tpsa": 238.2
+        "tpsa": 238.2,
+        "hbd": 8,
+        "hba": 15,
+        "lipinski_pass": false,
+        "ro5_violations": 3
     },
     {
         "id": "29",
@@ -374,7 +486,11 @@ const compoundsData = [
         "sdf": "mol_29.sdf",
         "mw": 432.11,
         "logp": 0.05,
-        "tpsa": 170.05
+        "tpsa": 170.05,
+        "hbd": 6,
+        "hba": 10,
+        "lipinski_pass": true,
+        "ro5_violations": 1
     },
     {
         "id": "30",
@@ -387,7 +503,11 @@ const compoundsData = [
         "sdf": "mol_30.sdf",
         "mw": 462.12,
         "logp": 0.06,
-        "tpsa": 179.28
+        "tpsa": 179.28,
+        "hbd": 6,
+        "hba": 11,
+        "lipinski_pass": false,
+        "ro5_violations": 2
     },
     {
         "id": "31",
@@ -400,7 +520,11 @@ const compoundsData = [
         "sdf": "mol_31.sdf",
         "mw": 286.05,
         "logp": 2.28,
-        "tpsa": 111.13
+        "tpsa": 111.13,
+        "hbd": 4,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "32",
@@ -413,7 +537,11 @@ const compoundsData = [
         "sdf": "mol_32.sdf",
         "mw": 270.05,
         "logp": 2.58,
-        "tpsa": 90.9
+        "tpsa": 90.9,
+        "hbd": 3,
+        "hba": 5,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "33",
@@ -426,7 +554,11 @@ const compoundsData = [
         "sdf": "mol_33.sdf",
         "mw": 300.06,
         "logp": 2.59,
-        "tpsa": 100.13
+        "tpsa": 100.13,
+        "hbd": 3,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "34",
@@ -439,7 +571,11 @@ const compoundsData = [
         "sdf": "mol_34.sdf",
         "mw": 786.22,
         "logp": -3.91,
-        "tpsa": 337.58
+        "tpsa": 337.58,
+        "hbd": 12,
+        "hba": 21,
+        "lipinski_pass": false,
+        "ro5_violations": 3
     },
     {
         "id": "35",
@@ -452,7 +588,11 @@ const compoundsData = [
         "sdf": "mol_35.sdf",
         "mw": 756.21,
         "logp": -3.92,
-        "tpsa": 328.35
+        "tpsa": 328.35,
+        "hbd": 12,
+        "hba": 20,
+        "lipinski_pass": false,
+        "ro5_violations": 3
     },
     {
         "id": "36",
@@ -465,7 +605,11 @@ const compoundsData = [
         "sdf": "mol_36.sdf",
         "mw": 770.23,
         "logp": -3.27,
-        "tpsa": 317.35
+        "tpsa": 317.35,
+        "hbd": 11,
+        "hba": 20,
+        "lipinski_pass": false,
+        "ro5_violations": 3
     },
     {
         "id": "37",
@@ -478,7 +622,11 @@ const compoundsData = [
         "sdf": "mol_37.sdf",
         "mw": 610.15,
         "logp": -1.69,
-        "tpsa": 269.43
+        "tpsa": 269.43,
+        "hbd": 10,
+        "hba": 16,
+        "lipinski_pass": false,
+        "ro5_violations": 3
     },
     {
         "id": "38",
@@ -491,7 +639,11 @@ const compoundsData = [
         "sdf": "mol_38.sdf",
         "mw": 464.1,
         "logp": -0.54,
-        "tpsa": 210.51
+        "tpsa": 210.51,
+        "hbd": 8,
+        "hba": 12,
+        "lipinski_pass": false,
+        "ro5_violations": 2
     },
     {
         "id": "39",
@@ -504,7 +656,11 @@ const compoundsData = [
         "sdf": "mol_39.sdf",
         "mw": 594.16,
         "logp": -1.39,
-        "tpsa": 249.2
+        "tpsa": 249.2,
+        "hbd": 9,
+        "hba": 15,
+        "lipinski_pass": false,
+        "ro5_violations": 3
     },
     {
         "id": "40",
@@ -517,7 +673,11 @@ const compoundsData = [
         "sdf": "mol_40.sdf",
         "mw": 624.17,
         "logp": -1.38,
-        "tpsa": 258.43
+        "tpsa": 258.43,
+        "hbd": 9,
+        "hba": 16,
+        "lipinski_pass": false,
+        "ro5_violations": 3
     },
     {
         "id": "41",
@@ -530,7 +690,11 @@ const compoundsData = [
         "sdf": "mol_41.sdf",
         "mw": 434.08,
         "logp": 0.1,
-        "tpsa": 190.28
+        "tpsa": 190.28,
+        "hbd": 7,
+        "hba": 11,
+        "lipinski_pass": false,
+        "ro5_violations": 2
     },
     {
         "id": "42",
@@ -543,7 +707,11 @@ const compoundsData = [
         "sdf": "mol_42.sdf",
         "mw": 448.1,
         "logp": 0.49,
-        "tpsa": 190.28
+        "tpsa": 190.28,
+        "hbd": 7,
+        "hba": 11,
+        "lipinski_pass": false,
+        "ro5_violations": 2
     },
     {
         "id": "43",
@@ -556,7 +724,11 @@ const compoundsData = [
         "sdf": "mol_43.sdf",
         "mw": 478.11,
         "logp": -0.24,
-        "tpsa": 199.51
+        "tpsa": 199.51,
+        "hbd": 7,
+        "hba": 12,
+        "lipinski_pass": false,
+        "ro5_violations": 2
     },
     {
         "id": "44",
@@ -569,7 +741,11 @@ const compoundsData = [
         "sdf": "mol_44.sdf",
         "mw": 302.04,
         "logp": 1.99,
-        "tpsa": 131.36
+        "tpsa": 131.36,
+        "hbd": 5,
+        "hba": 7,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "45",
@@ -582,7 +758,11 @@ const compoundsData = [
         "sdf": "mol_45.sdf",
         "mw": 286.05,
         "logp": 2.28,
-        "tpsa": 111.13
+        "tpsa": 111.13,
+        "hbd": 4,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "46",
@@ -595,7 +775,11 @@ const compoundsData = [
         "sdf": "mol_46.sdf",
         "mw": 316.06,
         "logp": 2.29,
-        "tpsa": 120.36
+        "tpsa": 120.36,
+        "hbd": 4,
+        "hba": 7,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "47",
@@ -608,7 +792,11 @@ const compoundsData = [
         "sdf": "mol_47.sdf",
         "mw": 178.03,
         "logp": 1.2,
-        "tpsa": 70.67
+        "tpsa": 70.67,
+        "hbd": 2,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "48",
@@ -621,7 +809,11 @@ const compoundsData = [
         "sdf": "mol_48.sdf",
         "mw": 162.03,
         "logp": 1.5,
-        "tpsa": 50.44
+        "tpsa": 50.44,
+        "hbd": 1,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "49",
@@ -634,7 +826,11 @@ const compoundsData = [
         "sdf": "mol_49.sdf",
         "mw": 206.06,
         "logp": 1.81,
-        "tpsa": 48.67
+        "tpsa": 48.67,
+        "hbd": 0,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "50",
@@ -647,7 +843,11 @@ const compoundsData = [
         "sdf": "mol_50.sdf",
         "mw": 192.04,
         "logp": 1.51,
-        "tpsa": 59.67
+        "tpsa": 59.67,
+        "hbd": 1,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "51",
@@ -660,7 +860,11 @@ const compoundsData = [
         "sdf": "mol_51.sdf",
         "mw": 228.08,
         "logp": 2.97,
-        "tpsa": 60.69
+        "tpsa": 60.69,
+        "hbd": 3,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "52",
@@ -673,7 +877,11 @@ const compoundsData = [
         "sdf": "mol_52.sdf",
         "mw": 244.07,
         "logp": 2.68,
-        "tpsa": 80.92
+        "tpsa": 80.92,
+        "hbd": 4,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "53",
@@ -686,7 +894,11 @@ const compoundsData = [
         "sdf": "mol_53.sdf",
         "mw": 182.06,
         "logp": 1.22,
-        "tpsa": 55.76
+        "tpsa": 55.76,
+        "hbd": 1,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "54",
@@ -699,7 +911,11 @@ const compoundsData = [
         "sdf": "mol_54.sdf",
         "mw": 152.05,
         "logp": 1.21,
-        "tpsa": 46.53
+        "tpsa": 46.53,
+        "hbd": 1,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "55",
@@ -712,7 +928,11 @@ const compoundsData = [
         "sdf": "mol_55.sdf",
         "mw": 138.03,
         "logp": 0.91,
-        "tpsa": 57.53
+        "tpsa": 57.53,
+        "hbd": 2,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "56",
@@ -725,7 +945,11 @@ const compoundsData = [
         "sdf": "mol_56.sdf",
         "mw": 152.05,
         "logp": 1.18,
-        "tpsa": 46.53
+        "tpsa": 46.53,
+        "hbd": 1,
+        "hba": 3,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "57",
@@ -738,7 +962,11 @@ const compoundsData = [
         "sdf": "mol_57.sdf",
         "mw": 136.05,
         "logp": 1.31,
-        "tpsa": 37.3
+        "tpsa": 37.3,
+        "hbd": 1,
+        "hba": 1,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "58",
@@ -751,7 +979,11 @@ const compoundsData = [
         "sdf": "mol_58.sdf",
         "mw": 332.09,
         "logp": 3.43,
-        "tpsa": 40.8
+        "tpsa": 40.8,
+        "hbd": 0,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "59",
@@ -764,7 +996,11 @@ const compoundsData = [
         "sdf": "mol_59.sdf",
         "mw": 348.12,
         "logp": 3.72,
-        "tpsa": 40.8
+        "tpsa": 40.8,
+        "hbd": 0,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "60",
@@ -777,7 +1013,11 @@ const compoundsData = [
         "sdf": "mol_60.sdf",
         "mw": 349.13,
         "logp": 4.2,
-        "tpsa": 40.16
+        "tpsa": 40.16,
+        "hbd": 0,
+        "hba": 5,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "61",
@@ -790,7 +1030,11 @@ const compoundsData = [
         "sdf": "mol_61.sdf",
         "mw": 333.1,
         "logp": 3.91,
-        "tpsa": 40.16
+        "tpsa": 40.16,
+        "hbd": 0,
+        "hba": 5,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "62",
@@ -803,7 +1047,11 @@ const compoundsData = [
         "sdf": "mol_62.sdf",
         "mw": 363.11,
         "logp": 3.59,
-        "tpsa": 58.92
+        "tpsa": 58.92,
+        "hbd": 0,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "63",
@@ -816,7 +1064,11 @@ const compoundsData = [
         "sdf": "mol_63.sdf",
         "mw": 339.11,
         "logp": 1.99,
-        "tpsa": 69.18
+        "tpsa": 69.18,
+        "hbd": 2,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "64",
@@ -829,7 +1081,11 @@ const compoundsData = [
         "sdf": "mol_64.sdf",
         "mw": 347.08,
         "logp": 3.3,
-        "tpsa": 58.92
+        "tpsa": 58.92,
+        "hbd": 0,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "65",
@@ -842,7 +1098,11 @@ const compoundsData = [
         "sdf": "mol_65.sdf",
         "mw": 353.13,
         "logp": 2.33,
-        "tpsa": 60.39
+        "tpsa": 60.39,
+        "hbd": 1,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "67",
@@ -855,7 +1115,11 @@ const compoundsData = [
         "sdf": "mol_67.sdf",
         "mw": 369.12,
         "logp": 1.82,
-        "tpsa": 80.62
+        "tpsa": 80.62,
+        "hbd": 2,
+        "hba": 7,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "68",
@@ -868,7 +1132,11 @@ const compoundsData = [
         "sdf": "mol_68.sdf",
         "mw": 385.15,
         "logp": 2.57,
-        "tpsa": 94.09
+        "tpsa": 94.09,
+        "hbd": 2,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "69",
@@ -881,7 +1149,11 @@ const compoundsData = [
         "sdf": "mol_69.sdf",
         "mw": 369.16,
         "logp": 1.99,
-        "tpsa": 65.07
+        "tpsa": 65.07,
+        "hbd": 0,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "70",
@@ -894,7 +1166,11 @@ const compoundsData = [
         "sdf": "mol_70.sdf",
         "mw": 336.12,
         "logp": 3.1,
-        "tpsa": 40.8
+        "tpsa": 40.8,
+        "hbd": 0,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "71",
@@ -907,7 +1183,11 @@ const compoundsData = [
         "sdf": "mol_71.sdf",
         "mw": 322.11,
         "logp": 2.79,
-        "tpsa": 51.8
+        "tpsa": 51.8,
+        "hbd": 1,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "72",
@@ -920,7 +1200,11 @@ const compoundsData = [
         "sdf": "mol_72.sdf",
         "mw": 334.11,
         "logp": 3.12,
-        "tpsa": 40.8
+        "tpsa": 40.8,
+        "hbd": 0,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "73",
@@ -933,7 +1217,11 @@ const compoundsData = [
         "sdf": "mol_73.sdf",
         "mw": 338.14,
         "logp": 2.94,
-        "tpsa": 36.92
+        "tpsa": 36.92,
+        "hbd": 0,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "74",
@@ -946,7 +1234,11 @@ const compoundsData = [
         "sdf": "mol_74.sdf",
         "mw": 335.08,
         "logp": 3.19,
-        "tpsa": 66.88
+        "tpsa": 66.88,
+        "hbd": 0,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "75",
@@ -959,7 +1251,11 @@ const compoundsData = [
         "sdf": "mol_75.sdf",
         "mw": 323.12,
         "logp": 2.49,
-        "tpsa": 63.99
+        "tpsa": 63.99,
+        "hbd": 1,
+        "hba": 5,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "76",
@@ -972,7 +1268,11 @@ const compoundsData = [
         "sdf": "mol_76.sdf",
         "mw": 320.09,
         "logp": 2.81,
-        "tpsa": 40.8
+        "tpsa": 40.8,
+        "hbd": 0,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "77",
@@ -985,7 +1285,11 @@ const compoundsData = [
         "sdf": "mol_77.sdf",
         "mw": 320.09,
         "logp": 2.81,
-        "tpsa": 40.8
+        "tpsa": 40.8,
+        "hbd": 0,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "78",
@@ -998,7 +1302,11 @@ const compoundsData = [
         "sdf": "mol_78.sdf",
         "mw": 369.16,
         "logp": 2.85,
-        "tpsa": 57.23
+        "tpsa": 57.23,
+        "hbd": 0,
+        "hba": 6,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "79",
@@ -1011,7 +1319,11 @@ const compoundsData = [
         "sdf": "mol_79.sdf",
         "mw": 339.15,
         "logp": 3.09,
-        "tpsa": 40.16
+        "tpsa": 40.16,
+        "hbd": 0,
+        "hba": 5,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "80",
@@ -1024,7 +1336,11 @@ const compoundsData = [
         "sdf": "mol_80.sdf",
         "mw": 313.17,
         "logp": 3.19,
-        "tpsa": 39.72
+        "tpsa": 39.72,
+        "hbd": 1,
+        "hba": 4,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "81",
@@ -1037,7 +1353,11 @@ const compoundsData = [
         "sdf": "mol_81.sdf",
         "mw": 341.16,
         "logp": 1.53,
-        "tpsa": 70.0
+        "tpsa": 70.0,
+        "hbd": 2,
+        "hba": 5,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "82",
@@ -1050,7 +1370,11 @@ const compoundsData = [
         "sdf": "mol_82.sdf",
         "mw": 339.11,
         "logp": 3.65,
-        "tpsa": 81.79
+        "tpsa": 81.79,
+        "hbd": 1,
+        "hba": 5,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "83",
@@ -1063,7 +1387,11 @@ const compoundsData = [
         "sdf": "mol_83.sdf",
         "mw": 191.06,
         "logp": 1.5,
-        "tpsa": 73.32
+        "tpsa": 73.32,
+        "hbd": 3,
+        "hba": 2,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     },
     {
         "id": "84",
@@ -1076,6 +1404,10 @@ const compoundsData = [
         "sdf": "mol_84.sdf",
         "mw": 145.05,
         "logp": 1.94,
-        "tpsa": 33.12
+        "tpsa": 33.12,
+        "hbd": 1,
+        "hba": 2,
+        "lipinski_pass": true,
+        "ro5_violations": 0
     }
 ];

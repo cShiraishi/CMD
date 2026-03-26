@@ -5,6 +5,8 @@ from rdkit import Chem
 from rdkit.Chem import Draw
 from rdkit.Chem import rdDepictor
 from rdkit.Chem import Descriptors
+from rdkit.Chem import Lipinski
+import zipfile
 
 # Configuration
 INPUT_FILE = 'compounds_AnaB.xlsx'
@@ -53,6 +55,14 @@ def process_data():
                 logp = Descriptors.MolLogP(mol)
                 tpsa = Descriptors.TPSA(mol)
                 
+                # Lipinski Properties
+                hbd = Lipinski.NumHDonors(mol)
+                hba = Lipinski.NumHAcceptors(mol)
+                ro5_violations = sum([
+                    1 for val, limit in [(mw, 500), (logp, 5), (hbd, 5), (hba, 10)] if val > limit
+                ])
+                lipinski_pass = ro5_violations <= 1
+                
                 # specific image name
                 image_filename = f"mol_{compound_id}.svg"
                 image_path = os.path.join(OUTPUT_DIR, image_filename)
@@ -80,13 +90,26 @@ def process_data():
                     "sdf": sdf_filename,
                     "mw": round(mw, 2),
                     "logp": round(logp, 2),
-                    "tpsa": round(tpsa, 2)
+                    "tpsa": round(tpsa, 2),
+                    "hbd": hbd,
+                    "hba": hba,
+                    "lipinski_pass": lipinski_pass,
+                    "ro5_violations": ro5_violations
                 })
             else:
                 print(f"Failed to generate molecule for row {index} (SMILES: {smiles})")
 
         except Exception as e:
             print(f"Error processing row {index}: {e}")
+
+    # Generate Bulk ZIP for docking
+    zip_path = os.path.join('assets', 'all_structures.zip')
+    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+        for root, dirs, files in os.walk(SDF_DIR):
+            for file in files:
+                if file.endswith('.sdf'):
+                    file_path = os.path.join(root, file)
+                    zipf.write(file_path, arcname=os.path.join('sdf', file))
 
     # Save to JS file
     js_content = f"const compoundsData = {json.dumps(compounds_data, indent=4)};"
@@ -95,6 +118,7 @@ def process_data():
         f.write(js_content)
     
     print(f"Successfully processed {len(compounds_data)} compounds.")
+    print(f"Bulk SDF dataset packed into {zip_path}")
     print(f"Data saved to data.js")
 
 if __name__ == "__main__":
